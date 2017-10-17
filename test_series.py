@@ -1,7 +1,7 @@
 """Testing Fibonacci Series"""
 import pytest
-import pytestwatch
+#import pytestwatch
 
-def test_fib():
+def test_fib(n):
     from series import fibonacci
-    assert fibonacci(0) == 10
+    assert fibonacci(n) == 10
