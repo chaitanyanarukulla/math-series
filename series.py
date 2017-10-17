@@ -1,4 +1,4 @@
-"""Making functions and testing them."""
+"""This is function exercise based on the fibonacci sequence."""
 
-def fibonacci ():
-	#does stuff
+def fibonacci():
+	#does the stuff
