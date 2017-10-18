@@ -26,3 +26,4 @@ def sum_series(n, a = 0, b = 1):
         return b
     return sum_series(n - 1, a, b) + sum_series(n - 2, a, b)
 
+ if __name__ == "__main__":
