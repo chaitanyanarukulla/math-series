@@ -26,4 +26,11 @@ def sum_series(n, a = 0, b = 1):
         return b
     return sum_series(n - 1, a, b) + sum_series(n - 2, a, b)
 
- if __name__ == "__main__":
+if __name__ == "__main__":
+    """This module contains functions based on the fibonacci sequence."""
+    fibonacci(3)
+    #this function outputs fibonacci number of nth value
+    lucas(3)
+    #this function outputs lucas number of nth value
+    sum_series(3,4,2)
+    #This function outputs the sum of series
