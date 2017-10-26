@@ -1,5 +1,6 @@
 """This function exercise is based on the fibonacci sequence."""
 
+
 def fibonacci(n):
     """this function outputs fibonacci number of nth value"""
     if n == 0:
@@ -11,14 +12,14 @@ def fibonacci(n):
 
 def lucas(n):
     """this function outputs lucas number of nth value"""
-    if n == 2:
+    if n == 0:
         return 2
     if n == 1:
-        return 3
+        return 1
     return lucas(n - 1) + lucas(n - 2)
 
 
-def sum_series(n, a = 0, b = 1):
+def sum_series(n, a=0, b=1):
     """this function outputs the sum of series"""
     if n == 0:
         return a
@@ -28,9 +29,9 @@ def sum_series(n, a = 0, b = 1):
 
 if __name__ == "__main__":
     print(__doc__)
-    print(fibonacci(3))
+    print(fibonacci())
     print(fibonacci.__doc__)
-    print(lucas(3))
+    print(lucas())
     print(lucas.__doc__)
-    print(sum_series(3,4,2))
+    print(sum_series())
     print(sum_series.__doc__)
