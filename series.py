@@ -2,25 +2,27 @@
 
 
 def fibonacci(n):
-    """this function outputs fibonacci number of nth value"""
-    if n == 0:
-        return 0
+    """This function outputs fibonacci number of nth value."""
     if n == 1:
+        return 0
+    elif n == 2:
         return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 
 def lucas(n):
-    """this function outputs lucas number of nth value"""
-    if n == 0:
-        return 2
+    """This function outputs lucas number of nth value."""
     if n == 1:
+        return 2
+    elif n == 2:
         return 1
-    return lucas(n - 1) + lucas(n - 2)
+    else:
+        return lucas(n - 1) + lucas(n - 2)
 
 
 def sum_series(n, a=0, b=1):
-    """this function outputs the sum of series"""
+    """This function outputs the sum of series."""
     if n == 0:
         return a
     if n == 1:

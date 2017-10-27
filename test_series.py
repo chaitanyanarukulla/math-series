@@ -1,7 +1,7 @@
 """Testing Fibonacci Series"""
 import pytest
 
-FIB = [(0, 0), (1, 1), (2, 1), (3, 2), (4, 3), (11, 89), (12, 144), (20, 6765)]
+FIB = [(1, 0), (2, 1), (3, 1), (4, 2), (5, 3), (6, 5)]
 
 
 @pytest.mark.parametrize('input, result', FIB)
@@ -11,7 +11,7 @@ def test_fibonacci(input, result):
     assert fibonacci(input) == result
 
 
-LUCAS = [(0, 2), (1, 1), (2, 3), (3, 4), (4, 7), (5, 11), (6, 18)]
+LUCAS = [(1, 2), (2, 1), (3, 3), (4, 4), (5, 7), (6, 11)]
 
 
 @pytest.mark.parametrize('input, result', LUCAS)
